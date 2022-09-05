@@ -9,7 +9,7 @@ def sum_prod_diags(matrix, sum1 = 0, sum2 = 0)
     temp = 1
     matrix.each_with_index do |sub_arr, index|
       next unless sub_arr[index+column]
-
+      # TODO
       temp *= sub_arr[index+column]
     end
     sum1 += temp
